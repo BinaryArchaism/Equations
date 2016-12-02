@@ -13,7 +13,6 @@ public class Pair {
             this.x2 = x2;
         }
     }
-
     @Override
     public String toString() {
         if (NaN == true) {

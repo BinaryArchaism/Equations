@@ -17,7 +17,6 @@ public class Spreader {
             LinEq linEq = new LinEq(b, c);
             System.out.println(linEq.Solver());
         }
-
         else {
             QuadEq quadEq = new QuadEq(a, b, c);
             System.out.println(quadEq.PairSolver());
