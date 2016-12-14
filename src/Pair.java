@@ -3,10 +3,10 @@
  */
 public class Pair {
     double x1, x2;
-    boolean NaN;
+    int status = 1;
     public Pair(double x1, double x2) {
         if (x1 != x1 && x2 != x2) {
-            NaN = true;
+            status = 2;
         }
         else {
             this.x1 = x1;
@@ -15,7 +15,7 @@ public class Pair {
     }
     @Override
     public String toString() {
-        if (NaN == true) {
+        if (status == 2) {
             return "Квадратное уравнение, ответ: Нет решений";
         }
         else if (x1 == x2) {
