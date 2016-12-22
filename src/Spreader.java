@@ -14,7 +14,8 @@ public class Spreader {
             equ.solve();
         }
         else if (c == 0) {
-
+            equ = new WithoutC(a, b);
+            equ.solve();
         }
         else {
             equ = new QuadEq(a, b, c);

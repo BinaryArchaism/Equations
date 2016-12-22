@@ -11,7 +11,11 @@ public class Pair {
         }
         if (x1 != x1 && x2 != x2) {
             status = 2;
-        } else {
+        }
+        if (x1 == 0) {
+            status = 5;
+        }
+        else {
             this.x1 = x1;
             this.x2 = x2;
             status = 3;
@@ -32,7 +36,11 @@ public class Pair {
             return "Квадратное уравнение, ответ: Нет решений";
         } else if (status == 3) {
             return "Квадратное уравнение, ответ: X1 = " + x1 + " X2 = " + x2;
-        } else {
+        }
+        else if (status == 5) {
+            return "X1 = "+x1 + " X2 = "+x2;
+        }
+        else {
             return "X - любое число";
         }
     }
