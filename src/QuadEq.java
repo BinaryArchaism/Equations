@@ -14,6 +14,6 @@ public class QuadEq implements Solver {
         double dis = (b*b) - 4 * a * c;
         x1 = (-b - Math.sqrt(dis)) / (2 * a);
         x2 = (-b + Math.sqrt(dis)) / (2 * a);
-        return new Pair(x1, x2);
+        return new Pair(x1,x2);
     }
 }

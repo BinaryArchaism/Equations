@@ -6,15 +6,15 @@ public class Spreader {
 
     public Spreader(double a, double b, double c) {
         if (a == 0 && b == 0 && c == 0) {
-
+            equ = new AnyNumber();
+            equ.solve();
         }
         else if (a == 0) {
             equ = new LinEq(b, c);
             equ.solve();
         }
         else if (c == 0) {
-            equ = new AnyNumber(a);
-            equ.solve();
+
         }
         else {
             equ = new QuadEq(a, b, c);
