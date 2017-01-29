@@ -7,13 +7,12 @@ public class Pair {
 
     public Pair(double x1, double x2) {
         if (x1 == x2) {
+            this.x1 = x1;
+            this.x2 = x2;
             status = 1;
         }
-        if (x1 != x1 && x2 != x2) {
+        else if (x1 != x1 && x2 != x2) {
             status = 2;
-        }
-        if (x1 == 0) {
-            status = 5;
         }
         else {
             this.x1 = x1;
@@ -21,7 +20,6 @@ public class Pair {
             status = 3;
         }
     }
-
     public Pair(double x1) {
         if (x1 != x1) {
             status = 4;
@@ -36,9 +34,6 @@ public class Pair {
             return "Квадратное уравнение, ответ: Нет решений";
         } else if (status == 3) {
             return "Квадратное уравнение, ответ: X1 = " + x1 + " X2 = " + x2;
-        }
-        else if (status == 5) {
-            return "X1 = "+x1 + " X2 = "+x2;
         }
         else {
             return "X - любое число";
